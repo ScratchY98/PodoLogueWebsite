@@ -1,0 +1,222 @@
+<html><head><base href="file:///C:/Users/Noam/Desktop/Nouveau%20dossier/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabinet de Podologie - Tarifs</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary-color: #4a4a4a;
+    --secondary-color: #9a8c98;
+    --text-color: #333;
+    --bg-color: #f8f8f8;
+    --accent-color: #c9ada7;
+    --header-bg: #e8e8e8;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    background-color: var(--header-bg);
+    color: var(--primary-color);
+    padding: 3rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
+    opacity: 0.1;
+    animation: pulse 15s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  nav {
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  main {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: var(--accent-color);
+  }
+  
+  .note {
+    font-style: italic;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+  }
+</style>
+</head>
+      <body>
+          <header>
+              <div class="header-content">
+                  <h1>Cabinet de Podologie</h1>
+                  <p>Soins experts pour vos pieds</p>
+              </div>
+          </header>
+
+          <nav>
+              <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="tarifs.html">Tarifs</a></li>
+              </ul>
+          </nav>
+
+          <main id="content">
+              <div class="card">
+                  <h2>Nos Tarifs</h2>
+                  <table>
+                      <tr>
+                          <th>Service</th>
+                          <th>Tarif</th>
+                      </tr>
+                      <tr>
+                          <td>Soin de pédicurie</td>
+                          <td class="price">34€</td>
+                      </tr>
+                      <tr>
+                          <td>Bilan podologique</td>
+                          <td class="price">40€</td>
+                      </tr>
+                      <tr>
+                          <td>Traitement verrue plantaire</td>
+                          <td class="price"> 100€ à 140€</td>
+                      </tr>
+                      <tr>
+                          <td>Examen biomécanique complet</td>
+                          <td class="price">20€ à 34€</td>
+                      </tr>
+                  </table>
+                  <p style ="font-size : 10px"; class="note">Ces honoraires vous sont communiqués à titre indicatif par le praticien. Ils peuvent varier selon le type de soins finalement réalisés en cabinet, le nombre de consultations et les actes additionnels nécessaires. En cas de dépassement des tarifs, le praticien doit en avertir préalablement le patient.</p>
+                  <p style ="font-size : 10px"; class="note">Cartes bancaires non acceptées, payement en chèques et en espèces.</p>
+              </div>
+
+              <div class="card">
+                  <h3>Informations complémentaires</h3>
+                  <ul>
+                      <li>Les consultations sont prises en charge partiellement par la sécurité sociale.</li>
+                      <li>Certaines mutuelles peuvent rembourser une partie des soins non pris en charge.</li>
+                      <li>Nous acceptons les paiements par carte bancaire, chèque ou espèces.</li>
+                      <li>Des facilités de paiement peuvent être proposées pour les traitements longs ou coûteux.</li>
+                  </ul>
+              </div>
+          </main>
+
+
+          <footer class="footer">
+              <p>Cabinet de Podologie</p>
+          </footer>
+      </body>
+</html>
