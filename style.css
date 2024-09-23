@@ -44,13 +44,79 @@ header {
     }
 
     50% {
-        transform: scale(1.1);
+        transform: scale(2.2);
+    }
+
+
+    100% {
+        transform: scale(2.2);
+    }
+}
+
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes pulseButton {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
     }
 
     100% {
         transform: scale(1);
     }
 }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+    .card:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    .card:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    .card:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+
+.cta-button {
+    animation: pulseButton 1.5s infinite;
+}
+
+
+.service-icon:hover {
+    animation: zoomIn 0.3s ease forwards;
+}
+
 
 h1 {
     font-family: 'Playfair Display', serif;
